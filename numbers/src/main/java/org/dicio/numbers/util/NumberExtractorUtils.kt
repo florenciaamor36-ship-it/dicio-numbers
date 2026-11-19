@@ -183,11 +183,14 @@ object NumberExtractorUtils {
             } else if (ts[nextNotIgnore].hasCategory("hundred")) {
                 if (hundred < 0 && ten < 0) {
                     if (digit < 0) {
-                        hundred = 100 // e.g. a hundred
+                        // Some languages encode the complete hundred in the token itself
+                        // (e.g. Spanish "doscientos" = 200), while others use a generic
+                        // "hundred" token with value 100.
+                        hundred = ts[nextNotIgnore].number!!.integerValue()
                     } else if (digit == 0L) {
                         break // do not allow e.g. zero hundred
                     } else {
-                        hundred = digit * 100 // e.g. three hundred
+                        hundred = digit * ts[nextNotIgnore].number!!.integerValue() // e.g. three hundred
                         digit = -1 // reset digit for e.g. four hundred and nine
                     }
                 } else {

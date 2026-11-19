@@ -9,7 +9,13 @@ import java.time.LocalDateTime
 import java.util.Locale
 
 class SpanishLocaleTest {
-    private fun parser() = ParserFormatter(Locale.forLanguageTag("es-AR"))
+    private fun parser(): ParserFormatter {
+        return try {
+            ParserFormatter(Locale.forLanguageTag("es-AR"))
+        } catch (exception: Exception) {
+            throw AssertionError("Could not initialize Spanish number configuration: ${exception.cause ?: exception}", exception)
+        }
+    }
 
     @Test fun parsesSpanishCardinalNumbers() {
         assertEquals(23L, parser().extractNumber("veintitrés").parseFirst()!!.integerValue())

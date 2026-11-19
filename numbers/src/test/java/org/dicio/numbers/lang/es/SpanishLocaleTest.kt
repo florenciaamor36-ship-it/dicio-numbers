@@ -27,6 +27,36 @@ class SpanishLocaleTest {
         assertEquals(32L, parser().extractNumber("treinta y dos").parseFirst()!!.integerValue())
     }
 
+    @Test fun parsesSpanishOrdinalNumbersAndPluralForms() {
+        val cases = mapOf(
+            "primero" to 1L,
+            "segunda" to 2L,
+            "terceros" to 3L,
+            "cuarto" to 4L,
+            "cuartos" to 4L,
+            "cuartas" to 4L,
+            "quinto" to 5L,
+            "quintos" to 5L,
+            "quintas" to 5L,
+            "sexto" to 6L,
+            "sextos" to 6L,
+            "séptimo" to 7L,
+            "séptimos" to 7L,
+            "octava" to 8L,
+            "octavas" to 8L,
+            "noveno" to 9L,
+            "novenos" to 9L,
+            "décimo" to 10L,
+            "décimos" to 10L
+        )
+        for ((word, expected) in cases) {
+            val number = parser().extractNumber(word).parseFirst()
+            assertNotNull("Expected an ordinal value for '$word'", number)
+            assertEquals("Wrong value for '$word'", expected, number!!.integerValue())
+            assertEquals("'$word' should remain ordinal", true, number.isOrdinal)
+        }
+    }
+
     @Test fun parsesSpanishTimerDurations() {
         val duration = parser().extractDuration("cinco minutos y diez segundos").parseFirst()
         assertNotNull(duration)

@@ -248,7 +248,7 @@ class SpanishLocaleTest {
             "noningentésimas" to 900L
         )
         for ((word, expected) in cases) {
-            val number = parser().extractNumber(word).parseFirst()
+            val number = parser().extractNumber(word).preferOrdinal(true).parseFirst()
             assertNotNull("Expected an ordinal value for '$word'", number)
             assertEquals("Wrong value for '$word'", expected, number!!.integerValue())
             assertEquals("'$word' should remain ordinal", true, number.isOrdinal)

@@ -245,7 +245,11 @@ class SpanishLocaleTest {
             "noningentésimo" to 900L,
             "noningentésima" to 900L,
             "noningentésimos" to 900L,
-            "noningentésimas" to 900L
+            "noningentésimas" to 900L,
+            "cuadringentesimo" to 400L,
+            "cuadringentesima" to 400L,
+            "cuadringentesimos" to 400L,
+            "cuadringentesimas" to 400L
         )
         for ((word, expected) in cases) {
             val number = parser().extractNumber(word).preferOrdinal(true).parseFirst()

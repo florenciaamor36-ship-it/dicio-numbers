@@ -838,7 +838,11 @@
         "noningentésimo": 900,
         "noningentésima": 900,
         "noningentésimos": 900,
-        "noningentésimas": 900
+        "noningentésimas": 900,
+        "cuadringentesimo": 400,
+        "cuadringentesima": 400,
+        "cuadringentesimos": 400,
+        "cuadringentesimas": 400
       }
     },
     {
@@ -859,7 +863,12 @@
         "millonésimas": 1000000,
         "milmillonésimo": 1000000000,
         "billonesimo": 1000000000000,
-        "billonésimo": 1000000000000
+        "billonésimo": 1000000000000,
+        "millonesimo": 1000000,
+        "millonesima": 1000000,
+        "millonesimos": 1000000,
+        "millonesimas": 1000000,
+        "milmillonesimo": 1000000000
       }
     },
     {

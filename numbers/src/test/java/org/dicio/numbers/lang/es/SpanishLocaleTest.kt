@@ -30,7 +30,7 @@ class SpanishLocaleTest {
         assertNotNull(tomorrow)
         assertEquals(LocalDate.of(2026, 11, 20), tomorrow!!.toLocalDate())
         assertEquals(5, tomorrow.hour)
-        assertEquals(1, parser().extractDateTime("martes").now(now).parseFirst()!!.dayOfWeek.value)
+        assertEquals(2, parser().extractDateTime("martes").now(now).parseFirst()!!.dayOfWeek.value)
     }
 
     @Test fun pronouncesCommonSpanishNumbers() {

@@ -20,6 +20,8 @@ class SpanishLocaleTest {
     @Test fun parsesSpanishCardinalNumbers() {
         assertEquals(23L, parser().extractNumber("veintitrés").parseFirst()!!.integerValue())
         assertEquals(125L, parser().extractNumber("ciento veinticinco").parseFirst()!!.integerValue())
+        assertEquals(201L, parser().extractNumber("doscientos uno").parseFirst()!!.integerValue())
+        assertEquals(325L, parser().extractNumber("trescientos veinticinco").parseFirst()!!.integerValue())
         assertEquals(2026L, parser().extractNumber("dos mil veintiséis").parseFirst()!!.integerValue())
         assertEquals(1_000_000L, parser().extractNumber("un millón").parseFirst()!!.integerValue())
         assertEquals(32L, parser().extractNumber("treinta y dos").parseFirst()!!.integerValue())

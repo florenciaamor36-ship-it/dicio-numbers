@@ -302,7 +302,8 @@
     {
       "categories": [
         "tomorrow",
-        "compound_word_piece"
+        "compound_word_piece",
+        "moment_of_day"
       ],
       "values": [
         "mañana",
@@ -658,22 +659,7 @@
         "nonagesimo": 90,
         "nonagesima": 90,
         "nonagesimos": 90,
-        "nonagesimas": 90,
-        "veintiuno": 21,
-        "veintiun": 21,
-        "veintiún": 21,
-        "veintiuna": 21,
-        "veintidos": 22,
-        "veintidós": 22,
-        "veintitres": 23,
-        "veintitrés": 23,
-        "veinticuatro": 24,
-        "veinticinco": 25,
-        "veintiseis": 26,
-        "veintiséis": 26,
-        "veintisiete": 27,
-        "veintiocho": 28,
-        "veintinueve": 29
+        "nonagesimas": 90
       }
     },
     {

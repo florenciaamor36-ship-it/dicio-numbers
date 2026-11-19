@@ -10,8 +10,8 @@
   "word_matches": [
     {
       "categories": [
-        "ignore",
-        "date_time_ignore"
+        "date_time_ignore",
+        "ignore"
       ],
       "values": [
         "y",
@@ -20,9 +20,9 @@
     },
     {
       "categories": [
-        "thousand_separator",
+        "date_time_ignore",
         "ignore",
-        "date_time_ignore"
+        "thousand_separator"
       ],
       "values": [
         "."
@@ -50,9 +50,9 @@
     },
     {
       "categories": [
-        "point",
+        "date_time_ignore",
         "ignore",
-        "date_time_ignore"
+        "point"
       ],
       "values": [
         ","
@@ -71,8 +71,8 @@
     },
     {
       "categories": [
-        "fraction_separator",
-        "date_time_ignore"
+        "date_time_ignore",
+        "fraction_separator"
       ],
       "values": [
         "/",
@@ -81,8 +81,8 @@
     },
     {
       "categories": [
-        "sign",
-        "positive"
+        "positive",
+        "sign"
       ],
       "values": [
         "mas",
@@ -92,8 +92,8 @@
     },
     {
       "categories": [
-        "sign",
-        "negative"
+        "negative",
+        "sign"
       ],
       "values": [
         "menos"
@@ -101,9 +101,9 @@
     },
     {
       "categories": [
-        "sign",
+        "date_time_ignore",
         "negative",
-        "date_time_ignore"
+        "sign"
       ],
       "values": [
         "-"
@@ -111,8 +111,8 @@
     },
     {
       "categories": [
-        "duration_separator",
-        "date_time_ignore"
+        "date_time_ignore",
+        "duration_separator"
       ],
       "values": [
         "de"
@@ -120,9 +120,9 @@
     },
     {
       "categories": [
-        "duration_separator",
         "bcad_after",
-        "date_time_ignore"
+        "date_time_ignore",
+        "duration_separator"
       ],
       "values": [
         "d"
@@ -134,9 +134,7 @@
       ],
       "values": [
         "el",
-        "la",
         "los",
-        "las",
         "un",
         "una",
         "unos",
@@ -145,10 +143,7 @@
         "al",
         "que",
         "por",
-        "para",
-        "a",
-        "en",
-        "y"
+        "para"
       ]
     },
     {
@@ -158,8 +153,29 @@
         "pre_special_hour"
       ],
       "values": [
-        "las",
-        "la"
+        "la",
+        "las"
+      ]
+    },
+    {
+      "categories": [
+        "ampm_before",
+        "bcad_before",
+        "date_time_ignore",
+        "pre_special_hour"
+      ],
+      "values": [
+        "a"
+      ]
+    },
+    {
+      "categories": [
+        "date_time_ignore",
+        "positive",
+        "pre_relative_indicator"
+      ],
+      "values": [
+        "en"
       ]
     },
     {
@@ -197,20 +213,9 @@
     },
     {
       "categories": [
-        "date_time_ignore",
-        "pre_special_hour",
-        "bcad_before",
-        "ampm_before"
-      ],
-      "values": [
-        "a"
-      ]
-    },
-    {
-      "categories": [
-        "pre_relative_indicator",
+        "positive",
         "post_relative_indicator",
-        "positive"
+        "pre_relative_indicator"
       ],
       "values": [
         "proximo",
@@ -227,13 +232,13 @@
     },
     {
       "categories": [
-        "pre_relative_indicator",
-        "post_relative_indicator",
-        "positive",
-        "tomorrow_adder",
         "bcad_after",
         "compound_word_piece",
-        "pre_special_hour"
+        "positive",
+        "post_relative_indicator",
+        "pre_relative_indicator",
+        "pre_special_hour",
+        "tomorrow_adder"
       ],
       "values": [
         "despues",
@@ -242,20 +247,19 @@
     },
     {
       "categories": [
-        "pre_relative_indicator",
-        "positive"
+        "positive",
+        "pre_relative_indicator"
       ],
       "values": [
-        "en",
         "dentro",
         "desde"
       ]
     },
     {
       "categories": [
-        "pre_relative_indicator",
+        "negative",
         "post_relative_indicator",
-        "negative"
+        "pre_relative_indicator"
       ],
       "values": [
         "pasado",
@@ -274,18 +278,27 @@
     },
     {
       "categories": [
-        "post_relative_indicator",
-        "negative"
+        "negative",
+        "post_relative_indicator"
       ],
       "values": [
-        "hace",
+        "hace"
+      ]
+    },
+    {
+      "categories": [
+        "bcad_before",
+        "negative",
+        "post_relative_indicator"
+      ],
+      "values": [
         "antes"
       ]
     },
     {
       "categories": [
-        "yesterday",
-        "compound_word_piece"
+        "compound_word_piece",
+        "yesterday"
       ],
       "values": [
         "ayer"
@@ -301,9 +314,8 @@
     },
     {
       "categories": [
-        "tomorrow",
         "compound_word_piece",
-        "moment_of_day"
+        "tomorrow"
       ],
       "values": [
         "mañana",
@@ -312,19 +324,11 @@
     },
     {
       "categories": [
-        "yesterday_adder",
-        "compound_word_piece"
+        "compound_word_piece",
+        "yesterday_adder"
       ],
       "values": [
         "ante"
-      ]
-    },
-    {
-      "categories": [
-        "bcad_before"
-      ],
-      "values": [
-        "antes"
       ]
     },
     {
@@ -350,14 +354,6 @@
       ],
       "values": [
         "dc"
-      ]
-    },
-    {
-      "categories": [
-        "ampm_before"
-      ],
-      "values": [
-        "a"
       ]
     },
     {

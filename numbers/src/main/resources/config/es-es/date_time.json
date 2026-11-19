@@ -1,0 +1,224 @@
+{
+  "decade_format": {
+    "1": {
+      "match": "^\\d$",
+      "format": "{x}"
+    },
+    "2": {
+      "match": "^1\\d$",
+      "format": "{xx}"
+    },
+    "3": {
+      "match": "^\\d0$",
+      "format": "{x0}"
+    },
+    "4": {
+      "match": "^[2-9][1|8]",
+      "format": "{xx}"
+    },
+    "5": {
+      "match": "^[2-9]\\d$",
+      "format": "{x0}{x}"
+    },
+    "default": "{number}"
+  },
+  "hundreds_format": {
+    "1": {
+      "match": "^1\\d{2}$",
+      "format": "ciento"
+    },
+    "2": {
+      "match": "^\\d{3}$",
+      "format": "{x_in_x00}ciento"
+    },
+    "default": "{number}"
+  },
+  "thousand_format": {
+    "1": {
+      "match": "^1\\d{3}$",
+      "format": "mil"
+    },
+    "2": {
+      "match": "^\\d{4}$",
+      "format": "{x_in_x000}mil"
+    },
+    "default": "{number}"
+  },
+  "year_format": {
+    "1": {
+      "match": "^\\d\\d?$",
+      "format": "{formatted_decade} {bc}"
+    },
+    "2": {
+      "match": "^\\d00$",
+      "format": "{formatted_hundreds} {bc}"
+    },
+    "3": {
+      "match": "^\\d000$",
+      "format": "{formatted_thousand} {bc}"
+    },
+    "4": {
+      "match": "^\\d{3}$",
+      "format": "{formatted_hundreds} {formatted_decade} {bc}"
+    },
+    "5": {
+      "match": "^1[0-9]00$",
+      "format": "{formatted_thousand} {formatted_hundreds} {bc}"
+    },
+    "6": {
+      "match": "^10\\d{2}$",
+      "format": "{formatted_thousand} e {formatted_decade} {bc}"
+    },
+    "7": {
+      "match": "^[2-9][0-9]00$",
+      "format": "{formatted_thousand} {formatted_hundreds} {bc}"
+    },
+    "8": {
+      "match": "^20\\d{2}$",
+      "format": "{formatted_thousand} {formatted_decade} {bc}"
+    },
+    "9": {
+      "match": "^(1\\d{3})|(\\d0\\d{2})$",
+      "format": "{formatted_thousand} {formatted_hundreds} {formatted_decade} {bc}"
+    },
+    "10": {
+      "match": "^[2-9]000$",
+      "format": "{formatted_thousand} {bc}"
+    },
+    "11": {
+      "match": "^20\\d{2}$",
+      "format": "{formatted_thousand} {formatted_decade} {bc}"
+    },
+    "12": {
+      "match": "^([2-9]\\d{3})|(\\d0\\d{2})$",
+      "format": "{formatted_thousand} {formatted_hundreds} {formatted_decade} {bc}"
+    },
+    "13": {
+      "match": "^\\d{4}$",
+      "format": "{formatted_thousand} {formatted_hundreds} {formatted_decade} {bc}"
+    },
+    "default": "{year} {bc}",
+    "bc": "a. C."
+  },
+  "date_format": {
+    "date_full": "{weekday}, {day} de {month} de {formatted_year}",
+    "date_full_no_year": "{weekday}, {day} de {month}",
+    "date_full_no_year_month": "{weekday}, {day}",
+    "today": "hoy",
+    "tomorrow": "mañana",
+    "yesterday": "ayer"
+  },
+  "date_time_format": {
+    "date_time": "{formatted_date} a las {formatted_time}"
+  },
+  "weekday": {
+    "0": "lunes",
+    "1": "martes",
+    "2": "miércoles",
+    "3": "jueves",
+    "4": "viernes",
+    "5": "sábado",
+    "6": "domingo"
+  },
+  "date": {
+    "1": "uno",
+    "2": "dos",
+    "3": "tres",
+    "4": "cuatro",
+    "5": "cinco",
+    "6": "seis",
+    "7": "siete",
+    "8": "ocho",
+    "9": "nueve",
+    "10": "diez",
+    "11": "once",
+    "12": "doce",
+    "13": "trece",
+    "14": "catorce",
+    "15": "quince",
+    "16": "dieciséis",
+    "17": "diecisiete",
+    "18": "dieciocho",
+    "19": "diecinueve",
+    "20": "veinte",
+    "21": "veintiuno",
+    "22": "veintidós",
+    "23": "veintitrés",
+    "24": "veinticuatro",
+    "25": "veinticinco",
+    "26": "veintiséis",
+    "27": "veintisiete",
+    "28": "veintiocho",
+    "29": "veintinueve",
+    "30": "treinta",
+    "31": "treinta y uno"
+  },
+  "month": {
+    "1": "enero",
+    "2": "febrero",
+    "3": "marzo",
+    "4": "abril",
+    "5": "mayo",
+    "6": "junio",
+    "7": "julio",
+    "8": "agosto",
+    "9": "septiembre",
+    "10": "octubre",
+    "11": "noviembre",
+    "12": "diciembre"
+  },
+  "number": {
+    "1": "uno",
+    "2": "dos",
+    "3": "tres",
+    "4": "cuatro",
+    "5": "cinco",
+    "6": "seis",
+    "7": "siete",
+    "8": "ocho",
+    "9": "nueve",
+    "10": "diez",
+    "11": "once",
+    "12": "doce",
+    "13": "trece",
+    "14": "catorce",
+    "15": "quince",
+    "16": "dieciséis",
+    "17": "diecisiete",
+    "18": "dieciocho",
+    "19": "diecinueve",
+    "20": "veinte",
+    "21": "veintiuno",
+    "22": "veintidós",
+    "23": "veintitrés",
+    "24": "veinticuatro",
+    "25": "veinticinco",
+    "26": "veintiséis",
+    "27": "veintisiete",
+    "28": "veintiocho",
+    "29": "veintinueve",
+    "30": "treinta",
+    "31": "treinta y uno",
+    "40": "cuarenta",
+    "41": "cuarenta y uno",
+    "48": "cuarenta y ocho",
+    "50": "cincuenta",
+    "51": "cincuenta y uno",
+    "58": "cincuenta y ocho",
+    "60": "sesenta",
+    "61": "sesenta y uno",
+    "68": "sesenta y ocho",
+    "70": "setenta",
+    "71": "setenta y uno",
+    "78": "setenta y ocho",
+    "80": "ochenta",
+    "81": "ochenta y uno",
+    "88": "ochenta y ocho",
+    "90": "noventa",
+    "91": "noventa y uno",
+    "98": "noventa y ocho",
+    "100": "cien",
+    "1000": "mil",
+    "2000": "dos mil"
+  }
+}

@@ -22,12 +22,17 @@ class SpanishLocaleTest {
         assertEquals(125L, parser().extractNumber("ciento veinticinco").parseFirst()!!.integerValue())
         assertEquals(2026L, parser().extractNumber("dos mil veintiséis").parseFirst()!!.integerValue())
         assertEquals(1_000_000L, parser().extractNumber("un millón").parseFirst()!!.integerValue())
+        assertEquals(32L, parser().extractNumber("treinta y dos").parseFirst()!!.integerValue())
+        assertEquals(201L, parser().extractNumber("doscientos uno").parseFirst()!!.integerValue())
     }
 
     @Test fun parsesSpanishTimerDurations() {
         val duration = parser().extractDuration("cinco minutos y diez segundos").parseFirst()
         assertNotNull(duration)
         assertEquals(310L, duration!!.toJavaDuration().seconds)
+        val hours = parser().extractDuration("dos horas").parseFirst()
+        assertNotNull(hours)
+        assertEquals(7200L, hours!!.toJavaDuration().seconds)
     }
 
     @Test fun parsesSpanishRelativeDatesAndWeekdays() {
@@ -36,6 +41,8 @@ class SpanishLocaleTest {
         assertNotNull(tomorrow)
         assertEquals(LocalDate.of(2026, 11, 20), tomorrow!!.toLocalDate())
         assertEquals(5, tomorrow.hour)
+        assertEquals(LocalDate.of(2026, 11, 20), parser().extractDateTime("mañana").now(now).parseFirst()!!.toLocalDate())
+        assertEquals(LocalDate.of(2026, 11, 19), parser().extractDateTime("hoy").now(now).parseFirst()!!.toLocalDate())
         assertEquals(2, parser().extractDateTime("martes").now(now).parseFirst()!!.dayOfWeek.value)
     }
 

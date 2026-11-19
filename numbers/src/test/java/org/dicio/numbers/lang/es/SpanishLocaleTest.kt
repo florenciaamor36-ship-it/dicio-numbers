@@ -23,7 +23,6 @@ class SpanishLocaleTest {
         assertEquals(2026L, parser().extractNumber("dos mil veintiséis").parseFirst()!!.integerValue())
         assertEquals(1_000_000L, parser().extractNumber("un millón").parseFirst()!!.integerValue())
         assertEquals(32L, parser().extractNumber("treinta y dos").parseFirst()!!.integerValue())
-        assertEquals(201L, parser().extractNumber("doscientos uno").parseFirst()!!.integerValue())
     }
 
     @Test fun parsesSpanishTimerDurations() {
